@@ -1,7 +1,7 @@
 import React from 'react'
 import StatisticContent from './components/StatisticContentBody';
 import {Helmet} from 'react-helmet';
-import Index from '../../Components/Head';
+import Statistichead from '../../Components/Head/statistichead';
 
 
 function Statistics() {
@@ -11,7 +11,7 @@ function Statistics() {
         <title>Rullier Admin</title>
       </Helmet>
       <div>
-        <Index />
+        <Statistichead />
         <StatisticContent /> 
       </div>
     </>

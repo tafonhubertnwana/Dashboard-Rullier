@@ -1,7 +1,7 @@
 import React from 'react'
-import ProjectContent from './Components/project';
+import ProjectContent from './Components/project/inde';
 import {Helmet} from 'react-helmet';
-import Index from '../../Components/Head/indexThree';
+import Projecthead from '../../Components/Head/projecthead';
 
 
 function Project() {
@@ -11,7 +11,7 @@ function Project() {
           <title>Yash Admin Sales Management System</title>                                                                                                                                                                                                                                 
         </Helmet>
         <div>
-            <Index />
+            <Projecthead />
             <ProjectContent />
         </div>
     </>

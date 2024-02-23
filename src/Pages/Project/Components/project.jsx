@@ -1,9 +1,8 @@
 import React from 'react'
 import { Link } from "react-router-dom"
-import ProjectTable from './projecttablerojecttable'
+import ProjectTable from './projecttable';
 
 
-g
 
 
 

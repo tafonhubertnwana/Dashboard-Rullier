@@ -1,8 +1,8 @@
 import { Outlet } from "react-router-dom"
 import Head from "../../Components/Header/Head";
 import Slidebar from "../../Components/Menu/MenuItems/Slidebar";
-import Chatbox from "../../Components/Chatbox/Chatbox";
-import Footer from "../../Components/Footer/Footer";
+import Chatbox from "../../Components/Chatbox/chatbox";
+import Footer from "../../Components/Footer/footer";
 
 
 const DashboardLayout = () => {

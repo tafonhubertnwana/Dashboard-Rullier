@@ -1,7 +1,7 @@
 import React from 'react'
 import QuoteContent from './Components/quote';
 import {Helmet} from 'react-helmet';
-import Index from '../../Components/Head/IndexTwo';
+import Quotehead from '../../Components/Head/quotehead';
 
 
 
@@ -12,7 +12,7 @@ function Quote() {
       
     </Helmet>
       <div>
-        <Index />
+        <Quotehead />
         <QuoteContent />
       </div>
     </>
