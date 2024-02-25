@@ -1,18 +1,17 @@
 import React from 'react'
 import DashboardLayout from "../../Pages/DashboardLayout/index";
 import {Route, Routes } from "react-router-dom";
-import Quote from '../../pages/Qoute';
-import Project from '../../pages/Project';
-import Statistics from '../../pages/Statistics';
-import Order from '../../pages/CreateOrder';
-import CreateProject from '../../pages/CreateProject/components/CreateProject';
-import CreateProjectTwo from '../../pages/CreateProjectTwo/Components/CreateProjectTwo';
-import Structure from '../../pages/Structure/Components/structure';
+import Quote from '../../Pages/Quote/index';
+import Project from '../../Pages/Project/index';
+import Statistics from '../../Pages/Statistics/index';
+import Order from '../../Pages/Orders/index';
+import TitleProject from '../../Pages/TitleProject/index'; 
+import Structure from '../../Pages/Structure/index';
 
 
 const Root = () => {
   return (
-    <div>
+    <div>  
       <Routes>
         <Route path="/"  element={<DashboardLayout />} >
           <Route path='/' index element={<Statistics />} />
@@ -20,13 +19,11 @@ const Root = () => {
           <Route path="/project" element={<Project />} />
           <Route path='/createorder' element={<Order />} /> 
         </Route>
-        <Route path="/createproject" element={<CreateProject />} />
-        <Route path="createprojecttwo" element={<CreateProjectTwo />} />
+        <Route path="/createproject" element={<TitleProject />} />
         <Route path="/structure" element={<Structure />} />
-        
       </Routes>
     </div>
   )
 }
-
+ 
 export default Root

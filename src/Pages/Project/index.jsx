@@ -1,5 +1,5 @@
 import React from 'react'
-import ProjectContent from './Components/project/inde';
+import ProjectContent from './Components/project';
 import {Helmet} from 'react-helmet';
 import Projecthead from '../../Components/Head/projecthead';
 

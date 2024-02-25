@@ -1,14 +1,13 @@
 import React, { useState } from 'react'
 import { LiaTimesSolid } from "react-icons/lia";
-import {Line } from 'rc-progress'
-import logo from "../../../Images/logo.jpg";
-import image1 from '../../../Images/image1.png';
+//import logo from "../../../Images/logo.jpg";
+//import image1 from '../../../Images/image1.png';
 import "../../../App.css"
 import {Link } from 'react-router-dom'
 
 
 
-const TitleProject = () => {
+const TitleProjectContent = () => {
 
   const [inputValue, setInputValue] = useState('');
 
@@ -22,10 +21,10 @@ const TitleProject = () => {
         <div className="row">
           <div className="col-4">
             <div className="logo-image">
-              <img src={logo} alt="logo" />
+              <img src={""} alt="logo" />
             </div>
             <div class="text-center">
-              <img src={image1} class="rounded" alt="illustration" />
+              <img src={""} class="rounded" alt="illustration" />
             </div>
             <div className='list-col'>
               <ul class="list-row fw-bold">
@@ -52,7 +51,7 @@ const TitleProject = () => {
                 </div>
               </div>
               <div className="btn-col">
-                <button type="button" className="btn btn-primary"><Link to="/titleproject">Back</Link></button>
+                <button type="button" className="btn btn-primary"><Link to="/TitleProjectContent">Back</Link></button>
                 <button type="button" className="btn btn-warning"><Link to="/createprojecttwo">Next</Link></button>
               </div>
             </div>
@@ -64,4 +63,4 @@ const TitleProject = () => {
   )
 }
 
-export default TitleProject
+export default TitleProjectContent

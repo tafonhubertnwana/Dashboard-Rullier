@@ -1,17 +1,17 @@
 import React from 'react'
-import TitleProject from './Components/titleproject'
 import {Helmet} from 'react-helmet';
+import TitleProjectContent from './Components/titleproject';
 
-const index = () => {
+const TitleProject = () => {
   return (
     
     <div>
       <Helmet>
         <title>Yash Admin Sales Management System</title>                                                                                                                                                                                                                                 
       </Helmet>
-      <TitleProject />
+      <TitleProjectContent />
     </div>
   )
 }
 
-export default index
+export default TitleProject

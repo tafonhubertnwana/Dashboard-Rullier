@@ -1,19 +1,14 @@
 import { Outlet } from "react-router-dom"
-import Head from "../../Components/Header/Head";
-import Slidebar from "../../Components/Menu/MenuItems/Slidebar";
+import Slidebar from "../../Components/SlideMenu/index";
 import Chatbox from "../../Components/Chatbox/chatbox";
 import Footer from "../../Components/Footer/footer";
 
 
 const DashboardLayout = () => {
-
-
   
-
   return(
     <>
       <div id="main-wrapper" >
-        <Head />
         <Chatbox />
         <Slidebar />
         <Outlet />

@@ -1,7 +1,7 @@
 import React from 'react'
 import {Helmet} from 'react-helmet';
-import Index from '../../Components/Head/indexThree';
-import CreateOrder from './Components/CreateOrder';
+import CreateOrder from './Components/o
+rder';
 
 
 function Order() {
@@ -11,7 +11,6 @@ function Order() {
           <title>Yash Admin Sales Management System</title>                                                                                                                                                                                                                                 
         </Helmet>
         <div>
-            <Index />
             <CreateOrder />
         </div>
     </>

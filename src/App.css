@@ -1,38 +1,290 @@
-.App {
+.cont{
+  margin: 0;
+  padding: 0;
+  max-height: 200vh;
+  max-width: 100vw;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+
+.container .col-4 {
+  padding-top: 30px;
+  background-color: black;
+}
+
+.container .col-4 .logo-image{
+  text-align: left;
+  padding-left: 5rem;
+}
+
+.container .col-8{
+  background-color: #fff;
+  padding: 20px 70px 0px 70px;
+  margin-right: 160%;
+}
+
+
+.container .col-8 .times{
+  text-align: left;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.col-8 .display-6{
+  font-family: sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 61px;
+  letter-spacing: 0em;
+  text-align: left;
+
+}
+
+.col-8 p{
+  padding-top: 5px ;
+  font-style: italic;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: none;
+}
+
+.col-8 .form-text{
+  font-style: italic;
+  text-align: left;
+  padding-bottom: 5px;
+}
+
+.col-8 .mb-3 {
+  padding: 20px 0px 10px 0px;
+}
+
+.col-8 .mb-3 .form-control{
+  padding: 15px 0px 15px 20px;
+}
+
+.col-8 .progress-col{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 180px;
+  padding: 40px 0px;
+  margin-bottom: 60px;
+  
+}
+
+.progress-col .progress-row{
+  width: 33%;
+}
+
+.progress-col .progress-row p{
+  color: rgb(255, 187, 0);
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-left: 0px;
+}
+
+.progress-col .btn-col .btn{
+  margin-left: 15px;
+}
+
+.col-4 .text-center{
+  padding: 15%  0px;
+}
+
+.col-4 .text-center .rounded{
+  width: 60%;
+  height: 50%;
+}
+
+.col-4 .list-col .list-row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 70px;
+  padding: 0px 50px;
+  color: #888;  
+}
+
+.col-4 .list-col .list-row li {
+  border-right: 2px solid #888;
+  padding: 0px 10px;
+}
+
+.col-4 .list-col .list-row li:last-of-type{
+  border-right: none;
+}
+
+.input-group .form-control{
+  border: none;
+  font-weight: bold;
+  text-align: left;
+}
+
+.input-group .input-group-append .input-group-text{
+  font-size: 20px;
+}
+
+.mb-3 .form{
+  font-weight: bold;
+  font-style: italic;
+}
+
+
+
+/* structure section*/
+.nav{
+  padding: 5px 30px;
+  list-style: none; 
+  border-bottom: 1px solid #8888885e;
+  background-color: #fff;
+  justify-content: space-between;
+}
+
+.nav .nav-item .btns{
+  font-size: 1.3rem;
+  margin-right: 2.5rem;
+  color: black;
+}
+
+.nav .p-tag{
+  margin-top: 1%;
+  font-size: 18px;
+}
+
+
+.row .row-col {
+  width: 20%;
+  border-right: 1px solid #8888885e;
+  background-color: #fff;
+}
+
+.row-col .simple-list-example-scrollspy{
+  padding: 40px;
+}
+
+.row-col .list-group-item{
+  border:none;
+  border-radius: 6px;
+}
+
+
+.row .row-col-8{
+  width: 80%;
+  background-color: #fff;
+  padding: 30px 200px 30px 40px;
+}
+
+.row .row-col-8 p{
+  width: 88%;
+}
+
+.container-section{
+  margin-top: 3rem;
+  border-radius: 8px;
+  padding: 6px 20px 20px 20px;
+}
+.container-section .form{
+  width:  40%;
+  border: none;
+}
+
+.container-section .input-section{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  border-bottom: 1px solid #8888885d;
+}
+
+.container-section .image-section{
+  margin-bottom: 25px;
+}
+
+.image-section .image-sec{
+  display: flex;
+  justify-content: flex-start;
+  align-items: left;
+  padding: 15px;
+}
+
+.image-section hr{
+  width: 95%;
+  margin-left: 20px;
+}
+
+.img img{
+  width: 70px;
+  float: left;
+  margin-right: 10px;
+}
+
+
+.image-sec .image-text p{
+  font-size:12px;
+  width: 100%;
+  color: black;
+  font-weight: bold;
+}
+
+
+
+.image-section{
+  margin-top: 23px;
+  border: 1px solid #888;
+  align-items: left;
+  border-radius: 10px;
+}
+
+
+
+.container-section .new-section{
+  border:1px dashed #888;
+  border-radius: 10px;
+  margin-top: 25px;
+  padding-top: 5px;
+}
+
+.container-section .new-section p{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.upload .btn{
+  background-color: rgba(250, 175, 114, 0.164);
+  margin-top: 3%;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-left: 74%;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+
+/*course strcutre*/   
+.new-support .support, .description{
+  margin: 20px;
+  padding-left: 15px;
+  padding-top: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button{
+  margin-left: 79%;
 }
+
+
+.button .btn{
+  margin: 1.8%;
+  border: none;
+  padding: 6% 5%;
+
+}
+
+
+
+
+
+
+
+
+ 

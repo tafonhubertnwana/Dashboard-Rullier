@@ -1,7 +1,7 @@
 import React from 'react'
 import { useEffect, useRef } from 'react'
 import $ from 'jquery'
-import "datatables.net-dt/css/jquery.dataTables.min.css";
+//import "datatables.net-dt/css/jquery.dataTables.min.css";
 
 
 

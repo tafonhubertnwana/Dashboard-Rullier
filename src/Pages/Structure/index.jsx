@@ -1,12 +1,12 @@
 import React from 'react'
-import Structure from './Components/structure'
+import StructureContent from './Components/structure'
 
-const index = () => {
+const Structure = () => {
   return (
     <div>
-      <Structure />
+      <StructureContent />
     </div>
   )
 }
 
-export default index
+export default Structure

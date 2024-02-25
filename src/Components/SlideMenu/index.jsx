@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { MenuItems } from '.';
+import { MenuItems } from './Slideitems/slide';
 
 
 function Menubar(props ) {

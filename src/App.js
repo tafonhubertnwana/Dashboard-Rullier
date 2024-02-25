@@ -1,4 +1,4 @@
-import Root from "./Components/Routes/index";
+import Root from "./Components/Routes/routes";
     
 
 function App() {

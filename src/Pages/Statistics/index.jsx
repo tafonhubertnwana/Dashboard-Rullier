@@ -1,5 +1,5 @@
 import React from 'react'
-import StatisticContent from './components/StatisticContentBody';
+import StatisticContent from './Components/statistic';
 import {Helmet} from 'react-helmet';
 import Statistichead from '../../Components/Head/statistichead';
 
