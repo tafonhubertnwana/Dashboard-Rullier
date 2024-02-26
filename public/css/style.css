@@ -9592,7 +9592,7 @@ label {
 
 .hamburger svg {
   position: absolute;
-  top: -13px;
+  top: 4px;
   left: 0;
   z-index: 1; }
 

@@ -6,8 +6,8 @@ import { FaRegPenToSquare } from "react-icons/fa6";
 import { PiDotsSixVertical } from "react-icons/pi";
 import { LuPen } from "react-icons/lu";
 import { IoIosArrowUp } from "react-icons/io";
-//import image2 from '../../../Images/Rectangle23@2x.png'
-//import image3 from '../../../Images/Rectangle23.png'
+import image2 from '../../../Assests/Images/Rectangle23.jpg'
+import image3 from '../../../Assests/Images/Rectangle.png'
 import { Link } from 'react-router-dom';
 
 
@@ -58,7 +58,7 @@ const StructureContent = () => {
                 </div>
                 <div className="image-sec">
                   <div className="img">
-                    <img src={""} class="rounded" alt="Rectangle2023" />
+                    <img src={image2} class="rounded" alt="Rectangle2023" />
                   </div>
                   <div className="image-text fw-bold fst-italic">
                     Top 5 UI_UX Design [Trends] Tips by Cuberto (2020).mp
@@ -74,7 +74,7 @@ const StructureContent = () => {
                 <hr />
                 <div className="image-sec">
                   <div className="img">
-                    <img src={""} class="rounded" alt="Rectangle2023" />
+                    <img src={image3} class="rounded" alt="Rectangle2023" />
                   </div>
                   <div className="image-text fw-bold fst-italic">
                     Top 5 UI_UX Design [Trends] Tips by Cuberto (2020).mp

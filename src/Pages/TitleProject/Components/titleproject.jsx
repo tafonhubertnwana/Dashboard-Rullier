@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { LiaTimesSolid } from "react-icons/lia";
-//import logo from "../../../Images/logo.jpg";
-//import image1 from '../../../Images/image1.png';
+import logo from "../../../Assests/Images/Bloc-Logo.png";
+import image1 from '../../../Assests/Images/image1.png';
 import "../../../App.css"
 import {Link } from 'react-router-dom'
 
@@ -21,10 +21,10 @@ const TitleProjectContent = () => {
         <div className="row">
           <div className="col-4">
             <div className="logo-image">
-              <img src={""} alt="logo" />
+              <img src={logo} alt="logo" />
             </div>
             <div class="text-center">
-              <img src={""} class="rounded" alt="illustration" />
+              <img src={image1} class="rounded" alt="illustration" />
             </div>
             <div className='list-col'>
               <ul class="list-row fw-bold">

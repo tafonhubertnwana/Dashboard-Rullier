@@ -10,6 +10,8 @@ const ProjectContent = () => {
 
   return (
   <>
+    
+
   {/***********************************
   Content body start************************************/}
     <div className="content-body">
@@ -351,16 +353,18 @@ const ProjectContent = () => {
         <div className="card">
           <div className="card-header">
             <h4 className="card-title">Liste des project </h4>
-            <div className='order-button'>
-              <button className="nav-add"
-								><Link to="/createorder">Add</Link></button> 
+            {/*<div>
+              <button className="btn btn-primary">
+                <Link to="/creatorder">Add</Link>
+            </button>*/}
             </div>
-          </div>
           <div className="card-body">
             <div id="smartwizard" className="form-wizard order-create">
                 <div id="wizard_recap" className="tab-pane" role="tabpanel">
                   <div className="table-responsive">
+
                     <ProjectTable />
+
                   </div>
                 </div>
               </div>
@@ -372,10 +376,12 @@ const ProjectContent = () => {
       </div>
       </div>
       
-      {/***********************************
-      Content body end************************************/}
+      
+      
     </>
   )
 }
 
 export default ProjectContent
+
+{/***********************************Content body end*************************************/}

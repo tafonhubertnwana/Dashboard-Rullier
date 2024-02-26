@@ -1,7 +1,6 @@
 import React from 'react'
 import {Helmet} from 'react-helmet';
-import CreateOrder from './Components/o
-rder';
+import CreateOrder from './Components/order';
 
 
 function Order() {

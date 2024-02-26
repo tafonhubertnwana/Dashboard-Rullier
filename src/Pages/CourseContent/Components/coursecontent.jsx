@@ -6,8 +6,8 @@ import { FaRegPenToSquare } from "react-icons/fa6";
 import { PiDotsSixVertical } from "react-icons/pi";
 import { LuPen } from "react-icons/lu";
 import { IoIosArrowUp } from "react-icons/io";
-import image2 from '../../../Images/Rectangle23@2x.png'
-import image3 from '../../../Images/Rectangle23.png'
+import image2 from '../../../Assests/Images/Rectangle23.jpg'
+import image3 from '../../../Assest/Images/Rectangle.png'
 import { Link } from 'react-router-dom';
 
 const CourseContent 
