@@ -7,7 +7,7 @@ import { PiDotsSixVertical } from "react-icons/pi";
 import { LuPen } from "react-icons/lu";
 import { IoIosArrowUp } from "react-icons/io";
 import image2 from '../../../Assests/Images/Rectangle23.jpg'
-import image3 from '../../../Assest/Images/Rectangle.png'
+import image3 from '../../../Assests/Images/Rectangle.png'
 import { Link } from 'react-router-dom';
 
 const CourseContent 
@@ -18,7 +18,7 @@ const CourseContent
         <div>
           <ul class="nav nav-pills nav-justified">
             <li class="nav-item">
-            <button type="button" class="btn btns btn-light"><IoIosArrowBack /></button>
+              <Link to="/structure"><button type="button" class="btn btns btn-light"><IoIosArrowBack /></button></Link>
             </li>
             <li class="nav-item p-tag fw-bold">
               Getting started with design

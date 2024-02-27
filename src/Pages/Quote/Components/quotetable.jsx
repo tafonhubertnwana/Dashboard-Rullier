@@ -27,7 +27,7 @@ useEffect(()=> {
       {title: 'Details'},                                                     
     ],
 
-    pagingType: 'numbers'
+    //pagingType: 'numbers'
   })
 }, [])
 

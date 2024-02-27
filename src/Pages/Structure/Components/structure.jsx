@@ -18,7 +18,7 @@ const StructureContent = () => {
         <div>
           <ul class="nav nav-pills nav-justified">
             <li class="nav-item">
-            <button type="button" class="btn btns btn-light"><IoIosArrowBack /></button>
+              <Link to=""><button type="button" class="btn btns btn-light"><IoIosArrowBack /></button></Link>
             </li>
             <li class="nav-item p-tag fw-bold">
               Getting started with design
@@ -32,7 +32,7 @@ const StructureContent = () => {
           <div class="col-4 row-col">
             <div id="simple-list-example" class="d-flex flex-column gap-2 simple-list-example-scrollspy">
               <Link class=" list-group-item list-group-item-action  fw-bold" to="/essence">Essence</Link>
-              <Link class="list-group-item list-group-item-action fw-bold" aria-current="true" to="/structurecourse">Structure</Link>
+              <Link class="list-group-item list-group-item-action fw-bold" aria-current="true" to="/content">Structure</Link>
               <Link class=" list-group-item list-group-item-action fw-bold" to="/accesoires">Accessoires</Link>
             </div>
           </div>

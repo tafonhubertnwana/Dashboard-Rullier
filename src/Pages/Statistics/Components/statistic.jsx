@@ -1,4 +1,4 @@
-import ApexChart from "./apexchart"
+//import ApexChart from "./apexchart"
 
 const StatisticContent = () => {
  return (
@@ -17,7 +17,7 @@ const StatisticContent = () => {
                   viewBox="0 0 46 46"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                >
+                >  
                   <path
                     fillRule="evenodd"
                     clipRule="evenodd"
@@ -137,8 +137,8 @@ const StatisticContent = () => {
             <div className="d-flex align-items-center justify-content-between">
               <div className="icon-box icon-box-lg bg-danger-light rounded-circle">
                 <svg
-                  width={46}
-                  height={46}
+                  width={20}
+                  height={40}
                   viewBox="0 0 46 46"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"

@@ -51,8 +51,8 @@ const TitleProjectContent = () => {
                 </div>
               </div>
               <div className="btn-col">
-                <button type="button" className="btn btn-primary"><Link to="/TitleProjectContent">Back</Link></button>
-                <button type="button" className="btn btn-warning"><Link to="/createprojecttwo">Next</Link></button>
+                <button type="button" className="btn btn-primary"><Link to="/">Back</Link></button>
+                <button type="button" className="btn btn-warning"><Link to="/createproject">Next</Link></button>
               </div>
             </div>
           </div>

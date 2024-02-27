@@ -25,7 +25,7 @@ useEffect(()=> {
       {title: 'Joining Date'},
       {title: 'Action'},                                                    
     ],
-    pagingType: 'numbers'
+    //pagingType: 'numbers'
   })
 }, [])
 

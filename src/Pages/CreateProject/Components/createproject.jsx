@@ -1,8 +1,7 @@
 import React, { useRef, useState } from 'react'
 import { LiaTimesSolid } from "react-icons/lia";
-import {Line } from 'rc-progress'
-import logo from "../../../Images/Bloc-Logo.png"
-import image2 from '../../../Images/x35.png';
+import logo from "../../../Assests/Images/Bloc-Logo.png"
+import image2 from '../../../Assests/Images/x35.png';
 import "../../../App.css"
 import {Link } from 'react-router-dom'
 import { RiDeleteBin5Line } from "react-icons/ri";
@@ -11,7 +10,7 @@ import { PiDotsSixVertical } from "react-icons/pi";
 
 const CreateProjectTwo = () => {
 
-  /*const [showInput, setShowInput] = useState(true)
+  const [showInput, setShowInput] = useState(true)
   const [inputValues, setInputValues] = useState([])
   const [currentInput, setCurrentInput] = useState('');
   const inputRef = useRef(null);
@@ -33,7 +32,7 @@ const CreateProjectTwo = () => {
   const handleAddInput = () => {
     setInputValues([...inputValues, currentInput]);
     setCurrentInput('');
-  };/** */
+  };
 
 
 
@@ -42,7 +41,7 @@ const CreateProjectTwo = () => {
        <div>
           <div className="container text-center cont">
             <div className="row">
-              <div className="col-6 position-fixed">
+              <div className="col-4">
                 <div className="logo-image">
                   <img src={logo} alt="logo-bloc" />
                 </div>
@@ -57,13 +56,13 @@ const CreateProjectTwo = () => {
                   </ul>
                 </div>
               </div>
-              <div className="col-6">
+              <div className="col-8">
                 <p className='times'><LiaTimesSolid /></p>
                 <div>
                   <h1 class="display-6">Etapes</h1>
                   <p>NB you can change the course title later if you wish to change it</p>
                 </div>
-              </div>
+              
                 <form>
                   <div class="mb-3">
                     <input type="email"  value={currentInput} onChange={handleInputChange} class="form-control form" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder='Entrer une étape '/>
@@ -97,7 +96,7 @@ const CreateProjectTwo = () => {
                     </div>
                   </div>
                   <div className="btn-col">
-                    <button type="button" className="btn btn-primary"><Link to="/createproject">Back</Link></button>
+                    <button type="button" className="btn btn-primary"><Link to="/titleproject">Back</Link></button>
                     <button type="button" className="btn btn-warning"><Link to="/structure">Next</Link></button>
                   </div>
                 </div>
@@ -105,7 +104,7 @@ const CreateProjectTwo = () => {
             </div>
           </div>
         </div>
-      
+      </div>
   )
 }
 

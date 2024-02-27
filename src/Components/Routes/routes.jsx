@@ -7,6 +7,8 @@ import Statistics from '../../Pages/Statistics/index';
 import Order from '../../Pages/Orders/index';
 import TitleProject from '../../Pages/TitleProject/index'; 
 import Structure from '../../Pages/Structure/index';
+import CourseContent from '../../Pages/CourseContent/Components/coursecontent';
+import CreateProject from '../../Pages/CreateProject/Components/createproject';
 
 
 const Root = () => {
@@ -19,8 +21,10 @@ const Root = () => {
           <Route path="project" element={<Project />} />
           <Route path='createorder' element={<Order />} /> 
         </Route>
-        <Route path="/createproject" element={<TitleProject />} />
+        <Route path="/titleproject" element={<TitleProject />} />
+        <Route path="createproject" element={<CreateProject /> } />
         <Route path="/structure" element={<Structure />} />
+        <Route path="/content" element={<CourseContent />} />
       </Routes>
     </div>
   )
