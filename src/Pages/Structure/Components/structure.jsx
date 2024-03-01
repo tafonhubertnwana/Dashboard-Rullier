@@ -14,50 +14,59 @@ import { Link } from 'react-router-dom';
 const StructureContent = () => {
   return (
     <>
-      <div className='cont'>
-        <div>
-          <ul class="nav nav-pills nav-justified">
+      <div className='container-fluid bg-white'>
+        <div class="">
+          <ul class="d-flex justify-content-between py-2 px-3 ">
             <li class="nav-item">
-              <Link to=""><button type="button" class="btn btns btn-light"><IoIosArrowBack /></button></Link>
+              <Link to="/createproject"><button type="button p-5" class="btn btn-light"><IoIosArrowBack class="fw-bolder fs-4 text-black"/></button></Link>
             </li>
             <li class="nav-item p-tag fw-bold">
               Getting started with design
+              <span class=" fs-4 pl-2">(DRAFT)</span>
             </li>
             <li class="nav-item">
-              <button type="button" class="btns btn btn-light"><PiDotsThreeLight /></button><button type="button" className="btn btn-warning">Save</button>
+              <button button type="button p-5" class="btn btn-light" style={{marginRight: "15px"}}><PiDotsThreeLight class="fw-bolder fs-4 text-black" /></button>
+              <button type="button" className="btn btn-warning">Save</button>
             </li>
           </ul>
         </div>
+
         <div class="row">
-          <div class="col-4 row-col">
-            <div id="simple-list-example" class="d-flex flex-column gap-2 simple-list-example-scrollspy">
-              <Link class=" list-group-item list-group-item-action  fw-bold" to="/essence">Essence</Link>
-              <Link class="list-group-item list-group-item-action fw-bold" aria-current="true" to="/content">Structure</Link>
-              <Link class=" list-group-item list-group-item-action fw-bold" to="/accesoires">Accessoires</Link>
+          <div class=" col-sm-4 border-end border-black-50 border-top" style={{width: "300px"}}>
+            <div class="">
+              <div id="simple-list-example" class="d-flex flex-column">
+                <ul class="list-group">
+                  
+                  <li class="list-group-item"><Link>Essence</Link></li>
+                  <li class="list-group-item"><Link>Structure</Link></li>
+                  <li class="list-group-item"><Link>Accessoires</Link></li>
+                </ul>
+              </div>
             </div>
           </div>
-          <div class="col-8 row-col-8">
-            <div data-bs-spy="scroll" data-bs-target="#simple-list-example" data-bs-offset="0" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
-              <h3 id="simple-list-item-1" class="fw-bold ">Structure</h3>
-              <p>Start putting together your course by creating sections, lectures and practice (quizzes, coding exercises and assignments).<br/>
+          
+          <div class="col-sm-8 p-5 border-top border-black-top" style={{width: "77%"}}>
+            <div >
+              <h3 class="fw-bold ">Structure</h3>
+              <p class=" pb-3">Start putting together your course by creating sections, lectures and practice (quizzes, coding exercises and assignments).<br/>
                 If you’re intending to offer your course for free, the total length of video content must be less than 2 hours.
               </p> 
             </div>
-            <div class="container-section border border-secondary-subtle">
-              <div className="image-section border border-secondary-subtle">
-                <div className="input-section">
-                  <div class="input-group form">
-                    <span class="input-group-text span1"><PiDotsSixVertical /></span>
-                    <p className='fw-bold'>Section 1: Introduction</p>
-                    <span class="input-group-text span2"><FaRegPenToSquare /></span>
-                    <span class="input-group-text span3"><RiDeleteBin5Line /></span>
+            <div class=" border border-secondary-subtle p-5 rounded" style={{width: "90%"}}>
+              <div className="border border-secondary-subtle rounded">
+                <div className="d-flex justify-content-between p-3 border-bottom border-black-50">
+                  <div class="d-flex w-50 border">
+                    <span class="fs-3"><PiDotsSixVertical /></span>
+                    <p className='fw-bold md-5'>Section 1: Introduction</p>
+                    <span class="fs-3 "><FaRegPenToSquare /></span>
+                    <span class="fs-3"><RiDeleteBin5Line /></span>
                   </div>
                   <div className='content'>
                     <button type="button" class="btn bg-warning-subtle text-emphasis-warning text-warning  fst-italic fs-5">+ Add new content <  IoIosArrowUp /></button>
                   </div>
                 </div>
-                <div className="image-sec">
-                  <div className="img">
+                <div className="d-flex pt-2 px-3">
+                  <div className="">
                     <img src={image2} class="rounded" alt="Rectangle2023" />
                   </div>
                   <div className="image-text fw-bold fst-italic">
@@ -71,9 +80,11 @@ const StructureContent = () => {
                     <button type="button" class="btn bg-warning-subtle text-emphasis-warning"><p class="text-warning ">Preview</p></button>
                   </div>
                 </div>
-                <hr />
-                <div className="image-sec">
-                  <div className="img">
+
+                <hr class="ms-4" style={{width: "95%"}}/>
+
+                <div className="d-flex pt-2 px-3">
+                  <div className="">
                     <img src={image3} class="rounded" alt="Rectangle2023" />
                   </div>
                   <div className="image-text fw-bold fst-italic">
@@ -88,13 +99,13 @@ const StructureContent = () => {
                   </div>
                 </div>
               </div>
-              <hr />
-              <div className="new-section">
-                <p>Add new section</p>
+              <hr class="my-4"/>
+              <div style={{borderStyle: "dashed"}} class="rounded border-black-50" >
+                <p class="text-center fw-bold fst-italic pt-2">Add new section</p>
               </div>
             </div>
-            <div className="upload ">
-              <button type="button" class="btn text-warning fst-italic fs-5">Upload all content at once</button>
+            <div className=" my-4 w-5 ">
+              <button type="button" class="btn btn-warning  fst-italic fs-5">Upload all content at once</button>
             </div>
           </div>
         </div>

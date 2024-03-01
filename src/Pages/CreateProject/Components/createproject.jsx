@@ -39,20 +39,20 @@ const CreateProjectTwo = () => {
   return (
     <div>
        <div>
-          <div className="container-fluid color">
+          <div className="container-fluid">
             <div className=" row ">
-              <div className="col-lg-4 p-5">
+              <div className="col-lg-4 px-5 pt-5">
                 <div className="ml-5">
-                  <img class="w-30 ml-5" src={logo} alt="logo-bloc" />
+                  <img style={{width: "150px", height: "50px"}} src={logo} alt="logo-bloc" />
                 </div>
                 <div class="text-center">
-                  <img src={image2} class="rounded w-75 pt-5" alt="illustration" />
+                  <img style={{width: "250px", height: "350px"}} src={image2} class="rounded pt-5" alt="illustration" />
                 </div>
-                <div className='pt-5 pl-5 pr-5'>
-                  <ul class="list-row fw-bold d-flex mt-5 justify-content-around ">
-                    <li class="border-right border-dark">Help</li>
-                    <li class="border-right border-dark">Terms & Condition</li>
-                    <li>Privacy Policy</li>
+                <div className='pt-5'>
+                  <ul class="list-row fw-bold d-flex my-5 justify-content-center ">
+                    <li class=" px-3 border-end border-black-50">Help</li>
+                    <li class=" px-3 border-end border-black-50">Terms & Condition</li>
+                    <li class="px-3 ">Privacy Policy</li>
                   </ul>
                 </div>
               </div>
@@ -69,35 +69,26 @@ const CreateProjectTwo = () => {
                     <input type="email"  value={currentInput} onChange={handleInputChange} class="form-control form" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder='Entrer une étape '/>
                     <div id="emailHelp" class="form-text fst-italic">Appuyer sur entrer pour valider</div>
                   </div>
-                  <hr/> 
-                  <div class="input-group mb-5">
-                    <div class="input-group-append">
-                      <button type='button' class=" btn input-group-text span1" onClick={handleAddInput} ><PiDotsSixVertical /></button>
-                      <ul>
-                        {inputValues.map((input, index) => (
-                          <li key={index}>{input}</li>
-                        ))}
-                      </ul>
-                    
+                  <hr/>
+                  <div class="pt-3">
+                    <div class="input-group border border-white">
+                      <span class="input-group-text bg-white "><PiDotsSixVertical /></span>
+                      <input type="text" class="form-control fst-italic fw-bold fs-4" placeholder='Etape 1: ESSENCE' />
+                      <span class="input-group-text bg-white "><FaRegPenToSquare/></span>
+                      <span class="input-group-text bg-white"><RiDeleteBin5Line/></span>
                     </div>
-                    { showInput && <input value={inputValue} onChange={(e) => setInputValue(e.target.value)} type="text" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="Etape 1:ESSENCE" />}
-                    <div class="input-group-append">
-                      <button type='button' class=" btn input-group-text span2" onClick={handleCopy}><FaRegPenToSquare /></button>
-                    </div>
-                    <div class="input-group-append">
-                      <button type="button" class=" btn input-group-text span3" onClick={handleDeleteInput }><RiDeleteBin5Line /></button>
-                    </div>
-                  </div>
+                  </div> 
+                  
                 </form>
-                <div class='d-flex justify-content-between pt-5'>
-                  <div class="progress-row border border-dark w-50">
-                    <p class="fst-italic fs-4 fw-bold ">Step 2 of 2</p>
-                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                <div class='d-flex justify-content-between' style={{ paddingTop: "100px"}}>
+                  <div class="progress-row w-50">
+                    <p class="fst-italic fs-4 fw-bold text-warning">Step 2 of 2</p>
+                    <div class="progress" style={{height: "15px"}} role="progressbar" aria-label="Basic example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
                       <div class="progress-bar progress-bar-warning fs-1" style={{width: "100%"}}></div>
                     </div>
                   </div>
-                  <div class="border border-dark w-25 ">
-                    <button type="button" className="btn btn-primary "><Link to="/titleproject">Back</Link></button>
+                  <div>
+                    <button type="button" className="btn btn-primary " style={{marginRight: "25px"}}><Link to="/titleproject">Back</Link></button>
                     <button type="button" className="btn btn-warning ml-4"><Link to="/structure">Next</Link></button>
                   </div>
                 </div>
