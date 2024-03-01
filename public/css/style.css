@@ -9592,7 +9592,7 @@ label {
 
 .hamburger svg {
   position: absolute;
-  top: 4px;
+  top: 5px;
   left: 0;
   z-index: 1; }
 
@@ -29271,7 +29271,9 @@ table.dataTable.display tbody td {
   table.dataTable.row-border tbody td, [data-theme-version="dark"]
   table.dataTable.display tbody th, [data-theme-version="dark"]
   table.dataTable.display tbody td {
-    border-color: rgba(255, 255, 255, 0.1); }
+    border-color: rgba(255, 255, 255, 0.1); 
+    padding-top: 310px}
+    
 
 .dataTables_wrapper .dataTables_length .bootstrap-select .dropdown-toggle {
   font-size: 0.813rem !important;

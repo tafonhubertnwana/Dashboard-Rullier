@@ -2,6 +2,7 @@ import React from 'react'
 import { useEffect, useRef } from 'react'
 import $ from 'jquery'
 //import 'datatables.net';
+//import DataTable from 'datatables.net-dt';
 //import "datatables.net-dt/css/jquery.dataTables.min.css";
 
 
@@ -25,7 +26,7 @@ useEffect(()=> {
       {title: 'Joining Date'},
       {title: 'Action'},                                                    
     ],
-    //pagingType: 'numbers'
+    pagingType: 'numbers'
   })
 }, [])
 

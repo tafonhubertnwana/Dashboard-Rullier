@@ -39,37 +39,38 @@ const CreateProjectTwo = () => {
   return (
     <div>
        <div>
-          <div className="container text-center cont">
-            <div className="row">
-              <div className="col-4">
-                <div className="logo-image">
-                  <img src={logo} alt="logo-bloc" />
+          <div className="container-fluid color">
+            <div className=" row ">
+              <div className="col-lg-4 p-5">
+                <div className="ml-5">
+                  <img class="w-30 ml-5" src={logo} alt="logo-bloc" />
                 </div>
                 <div class="text-center">
-                  <img src={image2} class="rounded" alt="illustration" />
+                  <img src={image2} class="rounded w-75 pt-5" alt="illustration" />
                 </div>
-                <div className='list-col'>
-                  <ul class="list-row fw-bold">
-                    <li>Help</li>
-                    <li>Terms & Condition</li>
+                <div className='pt-5 pl-5 pr-5'>
+                  <ul class="list-row fw-bold d-flex mt-5 justify-content-around ">
+                    <li class="border-right border-dark">Help</li>
+                    <li class="border-right border-dark">Terms & Condition</li>
                     <li>Privacy Policy</li>
                   </ul>
                 </div>
               </div>
-              <div className="col-8">
-                <p className='times'><LiaTimesSolid /></p>
-                <div>
-                  <h1 class="display-6">Etapes</h1>
-                  <p>NB you can change the course title later if you wish to change it</p>
+              <div className="col-lg-8  bg-white p-5 ml-4">
+                <div class="mb-5">
+                  <p className=' fw-bold fs-3'><LiaTimesSolid /></p>
+                  <div>
+                    <h1 class="display-6 fw-bold pt-2">Etapes</h1>
+                    <p class="fst-italic">NB you can change the course title later if you wish to change it</p>
+                  </div>
                 </div>
-              
                 <form>
-                  <div class="mb-3">
+                  <div class="mb-5">
                     <input type="email"  value={currentInput} onChange={handleInputChange} class="form-control form" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder='Entrer une étape '/>
-                    <div id="emailHelp" class="form-text">Appuyer sur entrer pour valider</div>
+                    <div id="emailHelp" class="form-text fst-italic">Appuyer sur entrer pour valider</div>
                   </div>
                   <hr/> 
-                  <div class="input-group">
+                  <div class="input-group mb-5">
                     <div class="input-group-append">
                       <button type='button' class=" btn input-group-text span1" onClick={handleAddInput} ><PiDotsSixVertical /></button>
                       <ul>
@@ -88,16 +89,16 @@ const CreateProjectTwo = () => {
                     </div>
                   </div>
                 </form>
-                <div className='progress-col'>
-                  <div class="progress-row">
-                    <p>Step 2 of 2</p>
+                <div class='d-flex justify-content-between pt-5'>
+                  <div class="progress-row border border-dark w-50">
+                    <p class="fst-italic fs-4 fw-bold ">Step 2 of 2</p>
                     <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                      <div class="progress-bar progress-bar-warning" style={{width: "100%"}}></div>
+                      <div class="progress-bar progress-bar-warning fs-1" style={{width: "100%"}}></div>
                     </div>
                   </div>
-                  <div className="btn-col">
-                    <button type="button" className="btn btn-primary"><Link to="/titleproject">Back</Link></button>
-                    <button type="button" className="btn btn-warning"><Link to="/structure">Next</Link></button>
+                  <div class="border border-dark w-25 ">
+                    <button type="button" className="btn btn-primary "><Link to="/titleproject">Back</Link></button>
+                    <button type="button" className="btn btn-warning ml-4"><Link to="/structure">Next</Link></button>
                   </div>
                 </div>
               </div>

@@ -10,7 +10,6 @@ const ProjectContent = () => {
 
   return (
   <>
-    
 
   {/***********************************
   Content body start************************************/}
@@ -356,7 +355,7 @@ const ProjectContent = () => {
             {/*<div>
               <button className="btn btn-primary">
                 <Link to="/creatorder">Add</Link>
-            </button>*/}
+              </button>*/}
             </div>
           <div className="card-body">
             <div id="smartwizard" className="form-wizard order-create">
@@ -371,11 +370,10 @@ const ProjectContent = () => {
             </div>
           </div>
         </div>
-      </div>
       {/* /tab-content */}
       </div>
       </div>
-      
+      </div>
       
       
     </>
@@ -384,4 +382,3 @@ const ProjectContent = () => {
 
 export default ProjectContent
 
-{/***********************************Content body end*************************************/}

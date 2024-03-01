@@ -13,14 +13,14 @@ import CreateProject from '../../Pages/CreateProject/Components/createproject';
 
 const Root = () => {
   return (
-    <div>  
+    <div>    
       <Routes>
         <Route path="/"  element={<DashboardLayout />} >
           <Route path='/' index element={<Statistics />} />
           <Route path="quote" element={<Quote />} />
-          <Route path="project" element={<Project />} />
-          <Route path='createorder' element={<Order />} /> 
+          <Route path="project" element={<Project />} /> 
         </Route>
+        <Route path="/createorder" element={<Order /> } />
         <Route path="/titleproject" element={<TitleProject />} />
         <Route path="createproject" element={<CreateProject /> } />
         <Route path="/structure" element={<Structure />} />

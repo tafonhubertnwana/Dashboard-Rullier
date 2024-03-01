@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import ReactApexChart from "react-apexcharts";
 import ApexCharts from "apexcharts";
 
 var defaultOptions = {
